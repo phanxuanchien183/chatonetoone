@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from 'react';
 import io from 'socket.io-client';
@@ -57,7 +57,7 @@ export default function Home() {
           <div>
             {messages.map((msg, index) => (
               <p key={index}>
-               <small>({msg.timestamp})</small> <strong>{msg.sender}:</strong> {msg.text} 
+                <strong>{msg.sender}:</strong> {msg.text} <small>({msg.timestamp})</small>
               </p>
             ))}
           </div>
